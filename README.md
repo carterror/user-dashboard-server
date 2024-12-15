@@ -1,17 +1,48 @@
-Inertia.js es una excelente opción para construir aplicaciones con Laravel y Vue.js, ya que permite combinar un backend robusto con un frontend dinámico sin la necesidad de configurar una API RESTful tradicional. A continuación, te explico cómo adaptar la prueba técnica utilizando Inertia:
+### **Documentación Service User Dashboard**
+----------
+Instrucciones para instalar, configurar y ejecutar:
+-----------
+1. **Create envaironment:**
+   ```bash
+   copy .env.example .env
+   ```
 
-### **Documentación en README.md**
+2. **Create Key Segurity:**
+   ```bash
+   php artisan key:generate
+   ```
 
-Incluye instrucciones para instalar, configurar y ejecutar:
-1. **Backend:**
+3. **Install dependencies:**
+   ```bash
+   composer install
+   ```
+
+4. **Create Archivo Database (Optional):**
+   ```bash
+   touch database/database.sqlite
+   ```
+
+5. **Create Database (Optional):**
+   ```bash
+   php artisan migrate --seed
+   ```
+
+6. **Tests Service:**
+   ```bash
+   php artisan test
+   ```
+
+7. **Start Service:**
    ```bash
    php artisan serve
    ```
-2. **Frontend:**
-   ```bash
-   npm run dev
-   ```
 
----
+8. **Start Your Favorite Browser**
+    - List users: http://127.0.0.1:8000/api/users
+    - Stats users for role: http://127.0.0.1:8000/api/users/stats
 
-Con esta implementación, tendrás una aplicación completamente funcional utilizando Laravel e Inertia.js para el manejo del backend y frontend.
+
+
+
+
+
