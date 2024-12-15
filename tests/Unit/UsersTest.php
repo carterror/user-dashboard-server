@@ -50,10 +50,6 @@ class UsersTest extends TestCase
         // Verificar que la respuesta es exitosa
         $response->assertStatus(200);
 
-        while (true) {
-            # code...
-        }
-
         $response->assertJson([
             [
                 'role' => 'comprador',
