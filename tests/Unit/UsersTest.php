@@ -61,7 +61,7 @@ class UsersTest extends TestCase
             ],
             [
                 'role' => 'revisor',
-                'count' => 30,
+                'count' => 32,
             ]
         ]);
 
