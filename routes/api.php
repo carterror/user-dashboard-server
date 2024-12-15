@@ -17,4 +17,3 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/users/stats', [UserController::class, 'stats']);
-Route::get('/users/role/{role}', [UserController::class, 'filterByRole']);
