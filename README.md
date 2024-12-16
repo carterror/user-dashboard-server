@@ -37,7 +37,13 @@ Instrucciones para instalar, configurar y ejecutar:
    php artisan serve
    ```
 
-8. **Start Your Favorite Browser**
+8. **Generate Documentation OPENAPI 3:**
+   ```bash
+   php artisan openapi:generate
+   ```
+
+9. **Start Your Favorite Browser**
+    - Documentation OPENAPI 3: http://127.0.0.1:8000/openapi
     - List users: http://127.0.0.1:8000/api/users
     - Stats users for role: http://127.0.0.1:8000/api/users/stats
 
